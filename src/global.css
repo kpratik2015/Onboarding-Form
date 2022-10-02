@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tw-color-primary: 102 77 229;
+  --color-primary: rgb(var(--tw-color-primary)); /* #664de5 */
+}
+
+@layer base {
+  html {
+    @apply min-h-full cursor-default leading-none;
+  }
+  body {
+    @apply text-base antialiased;
+    accent-color: var(--color-primary);
+  }
+  html,
+  body {
+    @apply flex flex-1 flex-col font-primary;
+  }
+
+  /* #region  /**=========== Typography =========== */
+  h1,
+  .h1 {
+    @apply text-2xl font-bold md:text-4xl;
+  }
+
+  h2,
+  .h2 {
+    @apply text-xl font-bold md:text-3xl;
+  }
+
+  h3,
+  .h3 {
+    @apply text-lg font-bold md:text-2xl;
+  }
+
+  h4,
+  .h4 {
+    @apply text-base font-bold md:text-lg;
+  }
+
+  body,
+  .p {
+    @apply text-sm md:text-base;
+  }
+  /* #endregion  /**======== Typography =========== */
+
+  .main-layout {
+    /* 1440px */
+    max-width: 90rem;
+    @apply mx-auto w-11/12;
+  }
+}
