@@ -5,6 +5,7 @@ import { StepOne } from "./modules/onboarding/StepOne";
 import { StepperForm } from "./modules/onboarding/StepperForm";
 import { StepThree } from "./modules/onboarding/StepThree";
 import { StepTwo } from "./modules/onboarding/StepTwo";
+import EdenLogo from "/images/edenlogo.png";
 
 function App() {
   const methods = useForm({
@@ -40,7 +41,7 @@ function App() {
 const LogoTitle = () => {
   return (
     <div className="flex items-center justify-center">
-      <img src="/images/edenlogo.png" className="w-10 h-10 object-contain" />
+      <img src={EdenLogo} className="w-10 h-10 object-contain" />
       <strong className="text-2xl">Eden</strong>
     </div>
   );

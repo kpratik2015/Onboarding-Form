@@ -4,6 +4,8 @@ import Button from "../../components/buttons/Button";
 import { FormHeader } from "../../components/forms/FormHeader";
 import clsxm from "../../utils/clsxm";
 import "./StepThree.css";
+import SingleAvatarAsset from "/images/single-avatar.png";
+import MultiAvatarAsset from "/images/multi-avatar.png";
 
 export const StepThree = () => {
   const { watch, setValue } = useFormContext();
@@ -13,13 +15,13 @@ export const StepThree = () => {
       id: 1,
       title: "For myself",
       description: "Write better. Think more clearly. Stay organized.",
-      icon: "/images/single-avatar.png",
+      icon: SingleAvatarAsset,
     },
     {
       id: 2,
       title: "With my team",
       description: "Wikis, docs, tasks & projects, all in one place.",
-      icon: "/images/multi-avatar.png",
+      icon: MultiAvatarAsset,
     },
   ] as const;
   return (

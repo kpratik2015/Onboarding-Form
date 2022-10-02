@@ -1,12 +1,13 @@
 import Button from "../../components/buttons/Button";
 import { FormHeader } from "../../components/forms/FormHeader";
+import CheckIcon from "/images/check-icon.png";
 
 export const FinalStep = () => {
   return (
     <div className="max-w-md mx-auto">
       <div className="flex justify-center">
         <img
-          src="/images/check-icon.png"
+          src={CheckIcon}
           className="w-20 h-20 object-contain animate-bounce"
         />
       </div>
